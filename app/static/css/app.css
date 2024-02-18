@@ -1,3 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Ubuntu", sans-serif ;
+    box-sizing: border-box;
+    text-decoration: none;
+}
 body {
     padding-top: 5rem;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background:#FFFAFA ;
+}
+.profile-card{
+    width: 400px;
+    margin:0 auto;
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-header{
+    background: 	#FF1493;
+    padding: 60px 40px;
+}
+.pic{
+    display:inline-block;
+    padding: 8px;
+    background: linear-gradient(130deg,	#06849d,#00ff48);
+    margin: auto;
+    border-radius: 50%;
+    background-size: 200% 200%;
+    animation: animated-gradient 2s linear infinite;
+}
+
+@keyframes animated-gradient{
+    25%{
+        background-position: left bottom;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    75%{
+        background-position: right top;
+    }
+    100%{
+        background-position: left top;
+    }
+}
+
+.pic img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name{
+    color: #f2f2f2;
+    font-size: 28px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.data{
+    font-size: 12px;
+    color:aliceblue;
+    font-style: italic;
+    
+}
+
+.card-footer{
+background: #f4f4f4;
+padding: 20px 10px;
+
+}
+p{
+    font-size: 14px;
+    color: rgb(89, 87, 87);
+    margin: 10px ;
+
+}
+
+.follow-btn{
+    display: inline-block;
+    padding: 12px 50px;
+    color:#FF1493;
+    border: 2px solid #FF1493;
+    border-radius: 6px;
+    margin-top: 16px;
+    transition: .3s linear;
+    text-decoration: none;
+}
+
+.follow-btn:hover{
+    background: #FF1493;
+    color:#f2f2f2;
+}
+
+.numbers{
+    display: flex;
+    align-items: center;
+}
+
+.item{
+    flex:1;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #FF1493;
+}
+
+.item span{
+    display: block;
+    color:  rgb(89, 87, 87);
+    font-size: 25px;
+}
+
+.border{
+    width: 1px;
+    height: 30px;
+    background: #bbb;
 }
